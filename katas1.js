@@ -9,8 +9,10 @@ console.log(oneThroughTwenty())
 
 function evensToTwenty() {
   let countEvens20 = []
-  for (let i = 2; i <= 20; i += 2){
-    countEvens20.push(i)
+  for (let i = 1; i <= 20; i++){
+    if(i % 2 == 0){
+      countEvens20.push(i)
+    }
   }
   return countEvens20
 }
@@ -18,8 +20,10 @@ console.log(evensToTwenty())
 
 function oddsToTwenty() {
   let countOdds20 = []
-  for (let i = 1; i <= 20; i += 2){
-    countOdds20.push(i)
+  for (let i = 1; i <= 20; i++){
+    if(i % 2 != 0){
+      countOdds20.push(i)
+    }
   }
   return countOdds20
 }
@@ -27,8 +31,10 @@ console.log(oddsToTwenty())
 
 function multiplesOfFive() {
   let MultiplesOf5 = []
-  for (let i = 5; i <= 100; i += 5){
-    MultiplesOf5.push(i)
+  for (let i = 0; i <= 100; i++){
+    if(i % 5 == 0){
+      MultiplesOf5.push(i)
+    }
   }
   return MultiplesOf5
 }
@@ -36,7 +42,7 @@ console.log(multiplesOfFive())
 
 function squareNumbers() {
   let squareNumbersArray = []
-    for(let i = 1; i <= 10; i++){
+  for(let i = 1; i <= 10; i++){
       squareNumbersArray.push(i * i)
     }
   return squareNumbersArray
@@ -54,8 +60,10 @@ console.log(countingBackwards())
 
 function evenNumbersBackwards() {
   let evenBackwardsArray = []
-  for (let i = 20; i >= 1; i -= 2){
-    evenBackwardsArray.push(i)
+  for (let i = 20; i > 0; i--){
+    if(i % 2 == 0){
+      evenBackwardsArray.push(i)
+    }
   }
   return evenBackwardsArray
 }
@@ -63,8 +71,10 @@ console.log(evenNumbersBackwards())
 
 function oddNumbersBackwards() {
   let oddBackwardsArray = []
-  for (let i = 19; i >= 1; i -= 2){
-    oddBackwardsArray.push(i)
+  for (let i = 20; i > 0; i--){
+    if(i % 2 != 0){
+      oddBackwardsArray.push(i)
+    }
   }
   return oddBackwardsArray
 }
@@ -72,8 +82,10 @@ console.log(oddNumbersBackwards())
 
 function multiplesOfFiveBackwards() {
   let multiples5Backwards = []
-  for (let i = 100; i > 0; i -= 5){
-    multiples5Backwards.push(i)
+  for (let i = 100; i >= 0; i--){
+    if(i % 5 == 0){
+      multiples5Backwards.push(i)
+    }
   }
   return multiples5Backwards
 }
